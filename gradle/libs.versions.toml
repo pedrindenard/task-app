@@ -1,0 +1,51 @@
+[versions]
+android = "8.5.2"
+
+ksp = "2.0.0-1.0.22"
+kotlin = "2.0.0"
+kotlinCoroutine = "1.9.0-RC"
+
+roomKtx = "2.6.1"
+coreKtx = "1.15.0"
+lifecycleKtx = "2.8.7"
+
+composeActivity = "1.9.3"
+composeBom = "2024.10.01"
+
+composeViewModel = "2.8.7"
+composeRuntime = "2.8.7"
+composeIcons = "1.7.5"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleKtx" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+androidx-view-model = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "composeViewModel" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "composeRuntime" }
+androidx-extend-icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "composeIcons" }
+
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-animation = { module = "androidx.compose.animation:animation-core" }
+
+jetpack-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomKtx" }
+jetpack-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomKtx" }
+jetpack-room-kotlin = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+
+kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinCoroutine" }
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutine" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android" }
+
+android-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-kotlin-jetbrains = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
