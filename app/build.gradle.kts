@@ -88,9 +88,4 @@ dependencies {
     implementation(libs.kotlin.coroutines.android)
     implementation(libs.kotlin.coroutines.core)
 
-    implementation(libs.jetpack.room.runtime)
-    implementation(libs.jetpack.room.kotlin)
-    annotationProcessor(libs.jetpack.room.compiler)
-    ksp(libs.jetpack.room.compiler)
-
 }
